@@ -1,0 +1,84 @@
+# Created by .ignore support plugin (hsz.mobi)
+node_modules/
+source/theme/libs/
+public/git
+.sass-cache/
+node_server/app/public/logs.txt
+vo_fond/local_settings.py
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+#Test database
+*.sqlite3
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# Static files
+media/
+local/
+
+# Virtualenv
+pip-selfcheck.json
+bin/
+include/
+
+# PyBuilder
+target/
+.idea
+.env
+/.env_staging
+/db.sqlite3
+/celerybeat-schedule

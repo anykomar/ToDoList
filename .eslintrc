@@ -1,0 +1,10 @@
+/* global require */
+{
+  "extend": "airbnb",
+  "env":{
+    "jquery" : true
+  },
+  "rules": {
+    "semi": "error"
+  }
+}
