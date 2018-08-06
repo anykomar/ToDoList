@@ -28,21 +28,19 @@ mail = Mail(app)
 def verify():
     if request.method == 'GET':
         return render_template('google486a3d035b6420f4.html')
-    abort(403)
+    abort(405)
 
 
 @app.route('/', methods=['GET'])
 def index():
     if request.method == 'GET':
         return render_template('index.html')
-    abort(403)
+    abort(405)
 
 
 @app.route('/send_email/', methods=['POST', 'GET'])
 def send_email():
     if request.method == 'POST' and request.json:  # and request.json:
-
-        print(request.json)
 
         email = request.json.get('email')
 
@@ -68,7 +66,7 @@ def send_email():
         return response
 
     else:
-        abort(403)
+        abort(405)
 
 
 if __name__ == '__main__':
