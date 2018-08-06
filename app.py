@@ -25,7 +25,7 @@ mail = Mail(app)
 
 
 @app.route('/google486a3d035b6420f4.html', methods=['GET'])
-def index():
+def verify():
     if request.method == 'GET':
         return render_template('google486a3d035b6420f4.html')
 
