@@ -28,28 +28,35 @@ mail = Mail(app)
 def verify():
     if request.method == 'GET':
         return render_template('google486a3d035b6420f4.html')
+    abort(403)
+
+
+@app.route('/', methods=['GET'])
+def index():
+    if request.method == 'GET':
+        return render_template('index.html')
+    abort(403)
 
 
 @app.route('/send_email/', methods=['POST', 'GET'])
 def send_email():
     if request.method == 'POST' and request.json:  # and request.json:
 
-        name = request.json.get('name')
-        phone_number = request.json.get('phone')
-        service = request.json.get('services')
+        print(request.json)
 
-        if not name or not phone_number or not service:
-            response = jsonify({'message': 'Data {name}, {phone} and {service} is required'})
+        email = request.json.get('email')
+
+        if not email:
+            response = jsonify({'message': 'Data {email} is required'})
             response.status_code = 400
             return response
 
-        msg = Message('Заявка x-fit!',
-                      sender='ukraine.trends@gmail.com',
-                      recipients=['info@trends.com.ua'])
+        msg = Message('Новая подписка almo.studio !',
+                      sender='Jacketprod.info@gmail.com',
+                      recipients=['hello@almo.studio'])
 
-        body = 'Новая заявка с сайта x-fit:\n' \
-               'Имя: %s. Телефон: %s.\n' \
-               'Услуга: %s' % (name, phone_number, service)
+        body = 'Новая подписка с сайта almo.studio!\n' \
+               'User email: %s.' % email
 
         msg.body = '%s' % body
         msg.html = "<b>%s</b>" % body
@@ -61,7 +68,7 @@ def send_email():
         return response
 
     else:
-        abort(404)
+        abort(403)
 
 
 if __name__ == '__main__':
