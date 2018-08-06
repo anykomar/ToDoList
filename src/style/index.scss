@@ -1,76 +1,159 @@
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url('../fonts/HelveticaThin/HelveticaNeueCyr-Thin.eot');
-  src: url('../fonts/HelveticaThin/HelveticaNeueCyr-Thin.woff2') format('woff2'),
-       url('../fonts/HelveticaThin/HelveticaNeueCyr-Thin.woff') format('woff'),
-       url('../fonts/HelveticaThin/HelveticaNeueCyr-Thin.ttf') format('truetype'),
-       url('../fonts/HelveticaThin/HelveticaNeueCyr-Thin.svg#HelveticaNeueCyr-Thin') format('svg'),
-       url('../fonts/HelveticaThin/HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype');
-  font-weight: 200;
-  font-style: normal;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+
+* {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url('../fonts/HelveticaRoman/HelveticaNeueCyr-Roman.eot');
-  src: url('../fonts/HelveticaRoman/HelveticaNeueCyr-Roman.woff2') format('woff2'),
-       url('../fonts/HelveticaRoman/HelveticaNeueCyr-Roman.woff') format('woff'),
-       url('../fonts/HelveticaRoman/HelveticaNeueCyr-Roman.ttf') format('truetype'),
-       url('../fonts/HelveticaRoman/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg'),
-       url('../fonts/HelveticaRoman/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url('../fonts/HelveticaMedium/HelveticaNeueCyr-Medium.eot');
-  src: url('../fonts/HelveticaMedium/HelveticaNeueCyr-Medium.woff2') format('woff2'),
-       url('../fonts/HelveticaMedium/HelveticaNeueCyr-Medium.woff') format('woff'),
-       url('../fonts/HelveticaMedium/HelveticaNeueCyr-Medium.ttf') format('truetype'),
-       url('../fonts/HelveticaMedium/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium') format('svg'),
-       url('../fonts/HelveticaMedium/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype');
-  font-weight: 500;
-  font-style: normal;
+.container {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url('../fonts/HelveticaBold/HelveticaNeueCyr-Bold.eot');
-  src: url('../fonts/HelveticaBold/HelveticaNeueCyr-Bold.woff2') format('woff2'),
-       url('../fonts/HelveticaBold/HelveticaNeueCyr-Bold.woff') format('woff'),
-       url('../fonts/HelveticaBold/HelveticaNeueCyr-Bold.ttf') format('truetype'),
-       url('../fonts/HelveticaBold/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold') format('svg'),
-       url('../fonts/HelveticaBold/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype');
-  font-weight: 700;
-  font-style: normal;
+.coming-soon {
+    justify-content: space-between;
+    padding: 5vh 0;
+    height: 100vh;
+    iframe{
+        height: 100%;
+        max-width: 720px;
+        width: 720px;
+    }
+    &__desc {
+        max-width: 570px;
+        margin-right: 50px;
+        & > img {
+            width: 188px;
+            height: 40px;
+            object-fit: contain;
+            margin-bottom: 4.7vh;
+        }
+        h3 {
+            font-family: Montserrat;
+            font-size: 26px;
+            font-weight: 900;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #a6a4b6;
+            margin-bottom: 3.8vh;
+        }
+        h2 {
+            font-family: Montserrat;
+            font-size: 70px;
+            font-weight: 800;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: left;
+            color: #403f48;
+            margin-bottom: 3.8vh;
+        }
+        & > p {
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.78;
+            letter-spacing: normal;
+            text-align: left;
+            color: #7f7f7f;
+
+        }
+    }
+    &__social {
+        margin-top:5.4vh;
+        align-items: center;
+        p {
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #403f48;
+            margin-right: 9px;
+        }
+        a {
+            width: 38px;
+            height: 38px;
+            border: solid 2px #f0f0f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right:20px;
+        }
+    }
 }
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url('../fonts/HelveticaBlack/HelveticaNeueCyr-Black.eot');
-  src: url('../fonts/HelveticaBlack/HelveticaNeueCyr-Black.woff2') format('woff2'),
-       url('../fonts/HelveticaBlack/HelveticaNeueCyr-Black.woff') format('woff'),
-       url('../fonts/HelveticaBlack/HelveticaNeueCyr-Black.ttf') format('truetype'),
-       url('../fonts/HelveticaBlack/HelveticaNeueCyr-Black.svg#HelveticaNeueCyr-Black') format('svg'),
-       url('../fonts/HelveticaBlack/HelveticaNeueCyr-Black.eot?#iefix') format('embedded-opentype');
-  font-weight: 900;
-  font-style: normal;
+.subscribe {
+    padding: 10px;
+    border-radius: 70px;
+    background-color: #f0f0f4;
+    margin-top: 4.4vh;
+    margin-bottom: 5vh;
+    input {
+        height: 50px;
+        line-height: 50px;
+        flex: 1;
+        background-color: transparent;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #a6a4b6;
+        padding: 0 20px;
+    }
+    button {
+        width: 150px;
+        height: 50px;
+        border-radius: 35px;
+        background-image: linear-gradient(124deg, #ffe53b, #ff2525);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
 }
 
-@font-face {
-  font-family: 'HelveticaNeue';
-  src: url('../fonts/HelveticaLight/HelveticaNeueCyr-UltraLight.eot');
-  src: url('../fonts/HelveticaLight/HelveticaNeueCyr-UltraLight.woff2') format('woff2'),
-       url('../fonts/HelveticaLight/HelveticaNeueCyr-UltraLight.woff') format('woff'),
-       url('../fonts/HelveticaLight/HelveticaNeueCyr-UltraLight.ttf') format('truetype'),
-       url('../fonts/HelveticaLight/HelveticaNeueCyr-UltraLight.svg#HelveticaNeueCyr-UltraLight') format('svg'),
-       url('../fonts/HelveticaLight/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype');
-  font-weight: 100;
-  font-style: normal;
+@media screen and (max-width: 768px){
+    .almo__desc{
+        margin-bottom:50px;
+        max-width:100%;
+    }
+    iframe{
+        margin: 0 auto;
+    }
 }
 
 
-@import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome";
-@import "fullpage";
-@import "main";
+@media screen and (max-width: 425px){
+    .almo__desc{
+        h2{
+            font-size: 40px;
+        }
+    }
+}

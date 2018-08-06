@@ -1,5 +1,5 @@
 {
-  "name": "almo",
+  "name": "construction",
   "version": "1.0.0",
   "description": "description",
   "main": "index.js",
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://kolintsio96@bitbucket.org/kolintsio96/almo-site.git"
+    "url": ""
   },
   "keywords": [
-    "almo"
+    "construction"
   ],
   "author": "Kolintsio Volodymyr",
   "license": "ISC",
@@ -33,7 +33,6 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "font-awesome": "^4.7.0",
-    "fullpage.js": "^3.0.2",
     "husky": "^0.14.3",
     "imagemin-webpack-plugin": "^2.1.5",
     "imask": "^3.4.0",
@@ -42,7 +41,6 @@
     "node-sass": "^4.9.2",
     "prettier": "^1.11.1",
     "sass-loader": "^6.0.7",
-    "slick-carousel": "^1.8.1",
     "style-loader": "^0.20.3",
     "url-loader": "^1.0.1",
     "webpack": "^4.16.0",
