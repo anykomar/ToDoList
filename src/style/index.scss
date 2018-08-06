@@ -21,21 +21,26 @@
 
 .coming-soon {
     justify-content: space-between;
-    padding: 5vh 0;
+    padding: 10vh 0;
     height: 100vh;
-    iframe{
+    &__gif {
         height: 100%;
         max-width: 720px;
-        width: 720px;
+        width: 50%;
     }
     &__desc {
         max-width: 570px;
+        flex: 1;
+        width: calc(50% - 50px);
         margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         & > img {
             width: 188px;
             height: 40px;
             object-fit: contain;
-            margin-bottom: 4.7vh;
+            //margin-bottom: 4.7vh;
         }
         h3 {
             font-family: Montserrat;
@@ -47,7 +52,7 @@
             letter-spacing: normal;
             text-align: left;
             color: #a6a4b6;
-            margin-bottom: 3.8vh;
+            //margin-bottom: 3.8vh;
         }
         h2 {
             font-family: Montserrat;
@@ -59,7 +64,7 @@
             letter-spacing: normal;
             text-align: left;
             color: #403f48;
-            margin-bottom: 3.8vh;
+            //margin-bottom: 3.8vh;
         }
         & > p {
             font-family: Montserrat;
@@ -75,7 +80,7 @@
         }
     }
     &__social {
-        margin-top:5.4vh;
+        //margin-top:5.4vh;
         align-items: center;
         p {
             font-family: Montserrat;
@@ -97,7 +102,7 @@
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            margin-right:20px;
+            margin-right: 20px;
         }
     }
 }
@@ -106,8 +111,8 @@
     padding: 10px;
     border-radius: 70px;
     background-color: #f0f0f4;
-    margin-top: 4.4vh;
-    margin-bottom: 5vh;
+    //margin-top: 4.4vh;
+    //margin-bottom: 5vh;
     input {
         height: 50px;
         line-height: 50px;
@@ -139,20 +144,49 @@
     }
 }
 
-@media screen and (max-width: 768px){
-    .almo__desc{
-        margin-bottom:50px;
-        max-width:100%;
+@media screen and (max-width: 1200px) {
+    .coming-soon {
+        height:auto;
+        &__desc, &__gif {
+            width: 100%;
+        }
+        &__gif{
+            margin-top:3.8vh;
+        }
+        &__desc {
+            h3 {
+                margin-bottom: 3.8vh;
+            }
+            h2 {
+                margin-bottom: 3.8vh;
+            }
+            & > img {
+                margin-bottom: 4.7vh;
+            }
+        }
+        &__social{
+            margin-top:5.4vh;
+        }
+        .subscribe {
+            margin-top: 4.4vh;
+            margin-bottom: 5vh;
+        }
     }
-    iframe{
+}
+
+@media screen and (max-width: 768px) {
+    .almo__desc {
+        margin-bottom: 50px;
+        max-width: 100%;
+    }
+    iframe {
         margin: 0 auto;
     }
 }
 
-
-@media screen and (max-width: 425px){
-    .almo__desc{
-        h2{
+@media screen and (max-width: 425px) {
+    .almo__desc {
+        h2 {
             font-size: 40px;
         }
     }

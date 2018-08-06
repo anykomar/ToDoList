@@ -99,9 +99,9 @@ form.addEventListener('submit', function (e) {
     axios.post('/send_email/', {
         email: form.querySelector('input').value
     }).then(function (response) {
-        console.log(form.querySelector('input').value);
+        form.querySelector('input').value = '';
     }).catch(function (error) {
-        console.log(form.querySelector('input').value);
+        console.log(error);
     });
 });
 
