@@ -103,11 +103,11 @@
             align-items: center;
             border-radius: 50%;
             margin-right: 20px;
-            &:hover{
+            &:hover {
                 background-image: linear-gradient(124deg, #ffe53b, #ff2525);
-                svg{
-                    path{
-                        fill:#fff;
+                svg {
+                    path {
+                        fill: #fff;
                     }
                 }
             }
@@ -140,7 +140,10 @@
         width: 150px;
         height: 50px;
         border-radius: 35px;
-        background-image: linear-gradient(124deg, #ffe53b, #ff2525);
+        //background-image: linear-gradient(to right, #ffe53b, #ff2525);
+        background-image: linear-gradient(to right, #ff2525 0%, #ffe53b 51%, #ff2525 100%);
+        background-size: 200% auto;
+        transition: .5s;
         font-family: Montserrat;
         font-size: 18px;
         font-weight: bold;
@@ -150,17 +153,21 @@
         letter-spacing: normal;
         color: #ffffff;
         cursor: pointer;
+
+        &:hover {
+            background-position: right center;
+        }
     }
 }
 
 @media screen and (max-width: 1200px) {
     .coming-soon {
-        height:auto;
+        height: auto;
         &__desc, &__gif {
             width: 100%;
         }
-        &__gif{
-            margin-top:3.8vh;
+        &__gif {
+            margin-top: 3.8vh;
         }
         &__desc {
             h3 {
@@ -173,8 +180,8 @@
                 margin-bottom: 4.7vh;
             }
         }
-        &__social{
-            margin-top:5.4vh;
+        &__social {
+            margin-top: 5.4vh;
         }
         .subscribe {
             margin-top: 4.4vh;
