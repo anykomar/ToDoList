@@ -69,7 +69,6 @@ docs/_build/
 # Static files
 media/
 local/
-static/
 
 # Virtualenv
 pip-selfcheck.json
